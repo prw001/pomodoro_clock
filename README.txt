@@ -1,3 +1,9 @@
+VIEW IN BROWSER (github io):
+https://prw001.github.io/pomodoro_clock/
+
+———————————————————————————————————————————————————————————
+
+
 Created as a solution to the Odin Project’s assignment:
 https://www.theodinproject.com/courses/web-development-101/lessons/pairing-project?ref=lnav
 
