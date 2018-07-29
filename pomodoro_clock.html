@@ -1,0 +1,105 @@
+<!DOCTYPE = html>
+<meta charset = "utf-8">
+<html>
+<title>Pomodoro Clock</title>
+<head>
+	<link type="text/css" rel="stylesheet" href="pomodoro_clock.css">
+	 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+	  <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet"> 
+</head>
+<body>
+	<div id="clock_title">
+		P O m O D O R O
+	</div>
+	<div id ="main_container">
+		<div id ="clock_top">
+		</div>
+		<div id="options_container_top">
+			<div class="option" id="add_ten_minutes_container" >
+				<button class="option_button" id=
+				"add_ten_minutes" title ="add ten minutes">
+				</button>
+			</div>
+			<div class="option" id="add_one_minute_container">
+				<button class="option_button" id=
+				"add_one_minute" title ="add one minute">
+				</button>
+			</div>
+			<div class="option" id="add_ten_seconds_container">
+				<button class="option_button" id=
+				"add_ten_seconds" title ="add ten seconds">
+				</button>
+			</div>
+			<div class="option" id="add_one_second_container">
+				<button class="option_button" id=
+				"add_one_second" title ="add one second">
+				</button>
+			</div>
+		</div>
+		<div id ="clock_middle">
+			<div id = "time_display">
+				<div class="digit" id="minute_tens">
+				</div>
+				<div class="digit" id="minute_ones">
+				</div>
+				<div class="digit_colon" id="colon">
+					:
+				</div>
+				<div class="digit" id="second_tens">
+				</div>
+				<div class="digit" id="second_ones">
+				</div>
+			</div>
+		</div>
+		<div id="options_container_bottom">
+			<div class="option" id="start_countdown_container">
+				<button class="option_button start_button" id=
+				"start_countdown" title="start/stop">
+				</button>
+			</div>
+			<div class="option" id="reset_container">
+				<button class="option_button" id=
+				"reset" title="reset to default">
+				</button>
+			</div>
+			<div class="option" id="minus_ten_minutes_container">
+				<button class="option_button" id=
+				"minus_ten_minutes" title="subtract ten minutes">
+				</button>
+			</div>
+			<div class="option" id="minus_one_minute_container">
+				<button class="option_button" id=
+				"minus_one_minute" title="subtract one minute">
+				</button>
+			</div>
+			<div class="option" id="minus_ten_seconds_container">
+				<button class="option_button" id=
+				"minus_ten_seconds" title="subtract ten seconds">
+				</button>
+			</div>
+			<div class="option" id="minus_one_second_container">
+				<button class="option_button" id=
+				"minus_one_second" title="subtract one second">
+				</button>
+			</div>
+			<div class="option" id="toggle_activity_container">
+				<button class="option_button" id=
+				"toggle_activity" title="switch between work and break">
+					work
+				</button>
+			</div>
+			<div class="option" id="toggle_sound_container">
+				<button class="option_button" id=
+				"toggle_sound" title="sound on or off">
+				</button>
+			</div>
+		</div>
+		<div id="clock_bottom">
+			<div id="sound_indicator" class="indicator_display">
+				on
+			</div>
+		</div>
+	</div>
+	<audio id="timer_chime" src='sounds/bell_chime_alert.flac'></audio>
+<script type="Text/JavaScript" src="pomodoro_clock.js"></script>
+</body>

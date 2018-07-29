@@ -1,0 +1,302 @@
+body{
+	height: auto;
+	width: auto;
+	min-height: 380px;
+	min-width: 800px;
+	margin-left: 25%;
+	padding-right: 25%;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	background: #e6f2ef;
+	cursor: default;
+}
+
+#clock_title{
+	text-align: center;
+	padding-right: 16px;
+	padding-bottom: 0;
+	color: #f5f1e4;
+	font-family: Syncopate, sans-serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 55px;
+	line-height: 34px;
+	text-shadow: 1px 1px gray;
+}
+
+#main_container{
+	display: flex;
+	flex-direction: column;
+	height: 370px;
+	width: 800px;
+}
+
+#clock_top{
+	order: 0;
+	height: 135px;
+	background: #f6f6f6;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	box-shadow: 0px 1px 0px 1px lightgray;
+	z-index: 1;
+}
+
+#options_container_top{
+	order: 1;
+	display: flex;
+	height: 100px;
+	background: white;
+	border-top: 2px solid #9d7878;
+	padding-left: 205px;
+}
+
+.option{
+	background: #bdffff;
+	height: 40px;
+	width: 40px;
+	margin: 4px;
+	position: relative;
+	text-align: center;
+	border-radius: 60px;
+	box-shadow: 0px 1px 2px 1px #5a5454;
+}
+
+.option:active{
+	background: #49fbff;
+	box-shadow: 0px 0px 2px 4px #b8edef;
+}
+
+.option_button{
+	width: 85%;
+	height: 85%;
+	border: 1px solid #d4dfe3;
+	border-radius: 60px;
+	position: relative;
+	top: 3px;
+	background-image: url("images/clock_button_arrow.jpg");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	padding: 0px;
+	opacity: 0.8;
+}
+
+.option_button:hover{
+	cursor: pointer;
+	opacity: .86;
+	border: 1px solid #b8aeae;
+}
+
+.disabled{
+	opacity: .4;
+	background: gray;
+}
+
+#add_ten_minutes_container{
+	order: 0;
+}
+
+#add_one_minute_container{
+	order: 1;
+	left: 21px;
+}
+
+#add_ten_seconds_container{
+	order: 2;
+	left: 154px;
+}
+
+#add_one_second_container{
+	order: 3;
+	left: 175px;
+}
+
+#clock_middle{
+	order: 2;
+	height: 231px;
+	background: white;
+	padding: 0px 4px 0px 4px;
+	border-top: 1px solid white;
+}
+
+#time_display{
+	display: flex;
+	flex-direction: row;
+	width: 600px;
+	height: 100%;
+	background: #f3f3f3;
+	padding-left: 190px;
+	border-radius: 8px;
+}
+#time_display:hover{
+	background: #efefef;
+}
+
+.digit, .digit_colon{
+	position: relative;
+	height: 100%;
+	width: 70px;
+	bottom: 4px;
+	text-align: center;
+	font-family: Dosis, sans-serif;
+	font-size: 110px;
+	font-weight: 300;
+	color: #494241;
+}
+
+#minute_tens{
+	order: 0;
+}
+
+#minute_ones{
+	order: 1;
+}
+
+#colon{
+	order: 2;
+	padding-top: 0;
+	position: relative;
+	bottom: 18px;
+	margin: 0 20px;
+}
+
+#second_tens{
+	order: 3;
+}
+
+#second_ones{
+	order: 4;
+}
+
+#options_container_bottom{
+	order: 3;
+	display: flex;
+	height: 100px;
+	background: white;
+	padding-left: 60px;
+	padding-bottom: 3px;
+}
+
+#start_countdown_container{
+	order: 0;
+}
+
+#start_countdown{
+
+}
+
+#reset_container{
+	order: 1;
+	left: 6px;
+}
+
+#reset{
+	background-image: url("images/circular_arrow.jpg");
+	background-position: 1px -1px;
+}
+
+#minus_ten_minutes_container{
+	order: 2;
+	left: 49px;
+}
+
+#minus_ten_minutes{
+	transform: rotate(180deg);
+}
+
+#minus_one_minute_container{
+	order: 3;
+	left: 70px;
+}
+
+#minus_one_minute{
+	transform: rotate(180deg);
+}
+
+#minus_ten_seconds_container{
+	order: 4;
+	left: 203px;
+}
+
+#minus_ten_seconds{
+	transform: rotate(180deg);
+}
+
+#minus_one_second_container{
+	order: 5;
+	left: 225px;
+}
+
+#minus_one_second{
+	transform: rotate(180deg);
+	z-index: 2;
+}
+
+#toggle_activity_container{
+	order: 6;
+	width: 65px;
+	left: 275px;
+}
+
+#toggle_activity{
+	width: 90%;
+	background-image: none;
+	font-family: Dosis, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #277577;
+	text-shadow: -1px -1px #aecccc;
+	z-index: 2;
+}
+
+#toggle_sound_container{
+	order: 7;
+	left: 295px;
+	z-index: 0;
+}
+
+#toggle_sound{
+	background-image: url("images/sound_icon.jpg");
+	z-index: 2;
+}
+
+#clock_bottom{
+	order: 4;
+	height: 135px;
+	background: #f6f6f6;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 2px 1px 0px #b8b0b0;
+	text-align: center;
+}
+
+.indicator_display{
+	position: relative;
+	font-size: 14px;
+	top: 6px;
+	font-family: Arial, sans-serif;
+	color: #10af10;
+	font-weight: 600;
+	width: 28px;
+	left: 726px;
+	background: lightgray;
+	height: 18px;
+	border-radius: 2px;
+	border: 1px inset #9ad09a;
+	text-shadow: 0px 1px #aeaeae;
+}
+
+.is_off{
+	color: #d82f2f;
+	border: 1px inset #dc8782;
+}
+
+.start_button{
+	background-image: url("images/power_icon.jpg");
+}
+
+.is_stopped{
+	background-image: url("images/stop_square.jpg");
+	background-size: 24px 24px;
+	background-position: 4px 4px;
+}
